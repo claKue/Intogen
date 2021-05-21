@@ -12,24 +12,20 @@ function Cards() {
                         <CardItem 
                             text="Explore the hidden waterfall deep inside the Amazon Jungle"
                             label="Adventure"
-                            path="/services"
                         />
                          <CardItem 
                             text="Bla bla bla"
                             label="Nothing"
-                            path="/services"
                         />
                     </ul>
                     <ul className="cards__items">
                         <CardItem 
                             text="Explore the hidden waterfall deep inside the Amazon Jungle"
                             label="Adventure"
-                            path="/services"
                         />
                         <CardItem 
                             text="Hier können die Lerntypen stehen"
                             label="Activist"
-                            path="/services"
                         />
                     </ul>
                 </div>

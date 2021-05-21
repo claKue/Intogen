@@ -1,6 +1,7 @@
-import React, {useState, useEffect} from 'react';
-import {Link} from 'react-router-dom';
+import React, {useState} from 'react';
+import {Link, BrowserRouter as Router} from 'react-router-dom';
 import './Navbar.css';
+import {NavDropdown} from 'react-bootstrap'
 
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -26,10 +27,18 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/visualization" className="nav-links" onClick={closeMobileMenu}>
-                                VISUALIZATION
-                            </Link>
+                            <NavDropdown title="VISUALIZATION" className="nav-links" > 
+                                   
+                                <Link to="/nationality" className="nav-links" onClick={closeMobileMenu}>
+                                    NATIONALITY
+                                </Link>
+                                <Link to="/education" className="nav-links" onClick={closeMobileMenu}>
+                                    EDUCATION DEGREE
+                                </Link>
+                            </NavDropdown>
                         </li>
+                        {/* <i className="fas fa-angle-down" /> */}
+
                         <li className="nav-item">
                             <Link to="/findyourtype" className="nav-links" onClick={closeMobileMenu}>
                                 FIND YOUR TYPE
