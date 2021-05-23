@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../App.css'
 import img2 from '../assets/1.jpg';
+import Footer from '../Footer'
 
 export default function AboutUs() {
     return (
@@ -16,6 +17,8 @@ export default function AboutUs() {
             <p>Teachers and organisation can also use the service to improve learning experience of students later on when the web service is developed.
             </p>
            <img src={img2} alt="UDE" />
+
+           <Footer/>
         </>
     )
 }

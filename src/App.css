@@ -5,11 +5,17 @@
     font-family: 'PT Sans', sans-serif;
   }
   
+.border1{
+  width: 330px;
+}
+
+/* color: rgb(255, 102, 0); */
+
   .home,
   .visualization,
   .findyourtype,
   .aboutus {
-  
+
     justify-content: center;
     font-size: 3rem;
     margin-top: 0px;
@@ -57,3 +63,42 @@
       margin-bottom: 10px;
     }
   
+.card {
+  margin-bottom: 10px;
+  width: 330px;
+  height: 70px;
+  margin-left: -62px;
+} 
+
+.card:hover{
+  color: rgb(255, 102, 0);
+}
+
+.rightSide {
+  height: 100%;
+  width: 350px;
+  right: 10px;
+  position: absolute;
+  top: 0px;
+  margin-top: 250px;
+  margin-right: 20px;
+  margin-bottom: 0px;
+}
+
+.leftSide {
+  height: 100%;
+  width: 700px;
+  left: 10px;
+  position: absolute;
+  padding: 10px;
+  top: 0px;
+  margin-top: 250px;
+  margin-left: 20px;
+  margin-bottom: 0px;
+}
+
+#countryCmbBox {
+  width: 80px;
+}
+
+

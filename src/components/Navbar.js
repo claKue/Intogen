@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {Link, BrowserRouter as Router} from 'react-router-dom';
 import './Navbar.css';
 import {NavDropdown} from 'react-bootstrap'
+import logo from './assets/logo.jpg'
 
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -14,8 +15,7 @@ function Navbar() {
             <nav className="navbar">
                 <div className="navbar-container">
                     <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-                        INTOGEN 
-                        {/* hier soll Logo hin */}
+                        <img src={logo} style={{width:300}} alt="Logo"/>
                     </Link>
                     <div className="menu-icon">
                         <i className={click ? "fas fa-times" : "fas fa-bars"} />
@@ -28,7 +28,7 @@ function Navbar() {
                         </li>
                         <li className="nav-item">
                             <NavDropdown title="VISUALIZATION" className="nav-links" > 
-                                   
+                                {/* <i className="fas fa-angle-down" />   */}
                                 <Link to="/nationality" className="nav-links" onClick={closeMobileMenu}>
                                     NATIONALITY
                                 </Link>
@@ -37,7 +37,7 @@ function Navbar() {
                                 </Link>
                             </NavDropdown>
                         </li>
-                        {/* <i className="fas fa-angle-down" /> */}
+                        
 
                         <li className="nav-item">
                             <Link to="/findyourtype" className="nav-links" onClick={closeMobileMenu}>
