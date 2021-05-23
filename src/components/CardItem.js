@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import img1 from '../components/assets/learning_styles.jpg';
 
 function CardItem(props) { 
     return (
@@ -7,11 +8,11 @@ function CardItem(props) {
             <li className="cards__item">
                 <Link className="cards__item__link" to={props.path}>
                     <figure className="cards__item__pic-wrap" data-category={props.label}>
-                        <img src="/" alt="Travel Image" className="cards__item__img" />
+                        <img src={img1} alt="Travel Image" className="cards__item__img" />
                     </figure>
                     <div className="cards__item__info">
-                        <h5 className="cards__item__text">{props.text} </h5>                      
-                    </div>
+                        <h5 className="cards__item__text">{props.text} </h5>
+                        </div>
                 </Link>
             </li>
         </>

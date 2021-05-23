@@ -7,7 +7,7 @@ function Footer() {
         <div className="footer-container">
             <section className="footer-subscription">
                 <p className="footer-subscription-heading">
-                    &copy; Intogen - All right reserved. 
+                    &copy; Intogen - All rights reserved. 
                 </p>
             </section>
         </div>
