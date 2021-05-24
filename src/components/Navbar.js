@@ -51,7 +51,9 @@ function Navbar() {
                         </li>
                     </ul>
                 </div>
+                
             </nav>
+            <hr class="border2" />
         </>
     )
 }
