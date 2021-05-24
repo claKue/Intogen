@@ -11,7 +11,7 @@ function Cards() {
             <div className="cards__container">
                 <div className="cards__wrapper">
                     <ul className="cards__items">
-                        <CardItem 
+                                    <CardItem
                             text="They want practical tasks and very little theory. They learn best from activities where:
                             New experiences are emphasised.
                             The focus is on the present and on doing such activities as games, problem solving,
@@ -93,3 +93,4 @@ function Cards() {
 }
 
 export default Cards
+

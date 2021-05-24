@@ -47,22 +47,23 @@
     color: #111;
     font-size: 100px;
     margin-top: 0px;
-
-    
   }
-    .aboutUs {
-      text-align: center;
-      font-size: 20px;
-      margin-top: 0px;
 
-    }
+  .aboutusTitel {
+  font-size: 80px;
+  text-align: left;
+  }
+  
+   .unterTitel {
+     font-size: 50px;
+     text-align: left;
+   }
 
-    h2 {
-      text-align: center;
-      font-size: 40px;
-      margin-top: 25px;
-      margin-bottom: 10px;
-    }
+   .aboutusText {
+     font-Size: 20px;
+     text-align: left;
+     max-width: 50%;
+   }
   
 .card {
   margin-bottom: 10px;
