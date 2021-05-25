@@ -27,8 +27,8 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <NavDropdown title="VISUALIZATION" className="nav-links" > 
-                                {/* <i className="fas fa-angle-down" />   */}
+                            <NavDropdown title="VISUALIZATION" className="nav-links" id="dropdown"> 
+                                {/* <i class="icon-angle-down"></i> */}
                                 <Link to="/nationality" className="nav-links" onClick={closeMobileMenu}>
                                     NATIONALITY
                                 </Link>
@@ -53,7 +53,6 @@ function Navbar() {
                 </div>
                 
             </nav>
-            <hr class="border2" />
         </>
     )
 }

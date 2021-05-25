@@ -12,6 +12,7 @@ import '../../App.css'
 export default function Nationality() {
     return (
         <>
+            <hr class="border2" data-content="Nationality"/>
             <div className="page-container">
                 <div className="nationality">
                     <div className="leftSide">

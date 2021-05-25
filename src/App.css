@@ -10,6 +10,28 @@
   width: 330px;
 }
 
+.border2 {
+  outline: 0;
+  border: 0;
+  background-color: rgb(41, 41, 41);
+  height: 100px;
+}
+  .border2:before {
+    content: '';
+    left: 0;
+    top: 50%;
+    width: 100%;
+  }
+  .border2:after {
+    content: attr(data-content);
+    display: inline-block;
+    color: #fff;
+    line-height: 2.5;
+    font-size: 40px;
+    padding: 0 .5em;
+    margin-left: 55px;
+  }
+
 /* color: rgb(255, 102, 0); */
 
   .home,
@@ -48,12 +70,7 @@
     font-size: 100px;
     margin-top: 0px;
   }
-
-  .aboutusTitel {
-  font-size: 80px;
-  text-align: left;
-  }
-  
+ 
    .unterTitel {
      font-size: 50px;
      text-align: left;

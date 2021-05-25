@@ -9,7 +9,7 @@ import Footer from '../Footer'
 export default function AboutUs() {
     return (
         <>
-        <h1 className="aboutusTitel">ABOUT US</h1>
+        <hr class="border2" data-content="About Us"/>
             <p className="aboutusText">We are students from Uni-DUE (Universität Duisburg - Essen) ISE program Computer Engineering department (CE) major (Intelligent Networked Systems) 
             This web application is our practical project (Praxis projekt) under the supervision of Prof. Dr. Mohamed Amine Chatti.
             To provide this application, we needed to collect data from other ISE students. Thus we used Sample Surveys method to collect data. 

@@ -50,9 +50,12 @@ render() {
 };
 var survey = new Survey.Model(json);
  return (
-          <Survey.Survey
-           model={survey}
-          />
+          <>
+            <hr class="border2" data-content="Find your Type"/>
+            <Survey.Survey
+            model={survey}
+            />
+          </>
         );
     }
 }

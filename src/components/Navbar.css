@@ -8,7 +8,7 @@
     z-index: 999;
   }
   
-  .fas fa-angle-down {
+  .icon-angle-down {
     color: #111;
   }
 
@@ -83,13 +83,7 @@
   .menu-icon {
     display: none;
   }
-  
-  .border2 {
-    background-color: rgb(41, 41, 41);
-    color: #fff;
-    width: auto;
-    height: 100px;
-  }
+
 
   @media screen and (max-width: 960px) {
     .NavbarItems {

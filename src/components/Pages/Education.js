@@ -8,6 +8,7 @@ import '../../App.css'
 export default function Education() {
     return (
         <>
+            <hr class="border2" data-content="Education"/>
             <div className="page-container">
                 <div className="education">
                     <div className="leftSide">
