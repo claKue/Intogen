@@ -1,134 +1,60 @@
-import React, {Component} from 'react'
-import "survey-react/survey.css";
+import React, { Component } from "react";
 import * as Survey from "survey-react";
+import "survey-react/modern.css";
 import Footer from '../Footer'
 
+Survey.StylesManager.applyTheme("modern");
+
 class FindYourType extends Component {
-  constructor(props){
-    super(props)
-    this.state = {
+    constructor() {
+        super();
+        }
 
-    }
-    this.onCompleteComponent = this.onCompleteComponent.bind(this)
-  }
-
-  onCompleteComponent = () => {
-    this.setState({
-      isCompleted: true
-    })
-  }
-
-  render(){
-    var json = {
-
-      "pages": [
-          {
-              "name": "page1",
-              "elements": [
-                  {
-                      "type": "rating",
-                      "name": "nps_score",
-                      "title": "I have strong beliefs about what is right and wrong, good and bad.",
-                      "isRequired": true,
-                      "rateMin": 0,
-                      "rateMax": 1,
-                      "minRateDescription": "(Disagree)",
-                      "maxRateDescription": "(Agree)"
-                  },
+render() {
+  var json = {
+          
+    questions: [
+         {
+        type: "matrix",
+        name: "Quality", 
+        title: "Please indicate if you agree or disagree with the following statements",
+        columns: [ 
+          { value: 1, 
+            text: "Agree" }, 
+          { value: 2, 
+            text: "Disagree" }],
+        rows: [
+          { value: "1", 
+            text: "I have strong beliefs about what is rigth and wrong, good and bad." }, 
+          { value: "2", 
+            text: "I often act without considering the possible consequences." },
+          { value: "3", 
+            text: "I have a reputation for saying what I think, simply and directly." }, 
+          { value: "4", 
+            text: "I often find that actions based on feelings are as sound as those based on careful thought and analysis." },
+          { value: "5", 
+            text: "I like the sort of work where I have time for thorough preparation and implementation." },
+          { value: "6", 
+            text: "I regularly question people about their basic assumptions." }, 
+          { value: "7", 
+            text: "When I hear about a new idea or approach, I immediatley start working out how to apply it in practice." }, 
+          { value: "8", 
+            text: "I get on best with logical, analytical people and less well with spontaneous, `irrational` people." },
+          { value: "9", 
+            text: "I take care over how I interpret data and avoid jumping to conclusions." },
+          { value: "10", 
+            text: "I am attracted more to novel, unusual ideas than to practical ones." }
               ]
-          }, {
-            "name": "page2",
-            "elements": [
-                {
-                    "type": "rating",
-                    "name": "nps_score",
-                    "title": "I often act without considering the possible consequences.",
-                    "isRequired": true,
-                    "rateMin": 0,
-                    "rateMax": 1,
-                    "minRateDescription": "(Disagree)",
-                    "maxRateDescription": "(Agree)"
-                }, 
-            ]
-        }, {
-          "name": "page3",
-          "elements": [
-              {
-                  "type": "rating",
-                  "name": "nps_score",
-                  "title": "I have a reputation for saying what i think, simply and directly.",
-                  "isRequired": true,
-                  "rateMin": 0,
-                  "rateMax": 1,
-                  "minRateDescription": "(Disagree)",
-                  "maxRateDescription": "(Agree)"
-              }, 
-          ]
-      }, {
-        "name": "page4",
-        "elements": [
-            {
-                "type": "rating",
-                "name": "nps_score",
-                "title": "I often find that actions based on feelings are as sound as those based on careful thought and analysis.",
-                "isRequired": true,
-                "rateMin": 0,
-                "rateMax": 1,
-                "minRateDescription": "(Disagree)",
-                "maxRateDescription": "(Agree)"
-            }, 
-        ]
-    }, {
-      "name": "page5",
-      "elements": [
-          {
-              "type": "rating",
-              "name": "nps_score",
-              "title": "I like the sort of work where I have time thorough preperation and implementation.",
-              "isRequired": true,
-              "rateMin": 0,
-              "rateMax": 1,
-              "minRateDescription": "(Disagree)",
-              "maxRateDescription": "(Agree)"
-          }, 
-      ]
-  }, 
-      ],
-      "showQuestionNumbers": "on"
-  };
-
-  var surveyRender = !this.state.isCompleted ? (
-    <Survey.Survey
-    json={json}
-    showCompletedPage={false}
-    onComplete={this.onCompleteComponent}
-    />
-  ) : null
-
-  var onSurveyCompletion = this.state.isCompleted ? (
-    <div style={{ fontSize: '3em', color: 'midnightblue'}}>David Kolb thanks you</div>
-  ) : null;
-
-  return (
-    <div className="App">
-      <div>
-        <h1 style={{ fontSize: 20, color:'midnightblue' }}>
-          Questions are based on David Kolb's research.
-          This questionnaire is designed to find out your preferred learning styles(s) as an adult. Over the years,
-          you have probably developed learning habits that help you benefit more from some experiences than from others.
-          This questionnaire will probably take you about 5-7 minutes to complete. The accuracy of your results depends 
-          on how honest you are. There are no right or wrong answers. For each statement, choose if you would rather agree or disagree 
-          with it and click the corresponding box, then move on to the next statement. If you find yourself wondering which situation 
-          to think of when answering a question, just think about how you are when you are working with people. 
-          Go with your first gut reaction instead of over-thinking your response.
-       </h1>
-        {surveyRender}
-        {onSurveyCompletion}
-        <Footer/>
-      </div>
-    </div>
-  );
-}
+      }
+    ]     
+};
+var survey = new Survey.Model(json);
+ return (
+          <Survey.Survey
+           model={survey}
+          />
+        );
+    }
 }
 
 export default FindYourType;
