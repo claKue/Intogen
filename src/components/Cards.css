@@ -5,6 +5,8 @@
   
   h1 {
     text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
   }
   
   .cards__container {
@@ -22,7 +24,7 @@
   }
   
   .cards__items {
-    margin-bottom: 24px;
+    margin-bottom: 10px;
   }
   
   .cards__item {
@@ -47,9 +49,10 @@
   .cards__item__pic-wrap {
     position: relative;
     width: 100%;
-    padding-top: 20%;
+    padding-top: 15%;
     overflow: hidden;
   }
+
   
   /* .fade-img {
     animation-name: fade-img;
@@ -60,13 +63,13 @@
     content: attr(data-category);
     position: absolute;
     bottom: 0;
-    padding: 6px 10px;
+    padding: 20px 30px;
     max-width: calc((100%) - 60px);
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 700;
     color: rgb(12, 12, 12);
     background-color: transparent;
-    text-align: center;
+    text-align: left;
 
   }
   
@@ -97,10 +100,14 @@
     color: #252e48;
     font-size: 14px;
     line-height: 24px;
-    text-align: center;
-
+    text-align: left;
   }
-  
+  .cards__item__type {
+    color:#374369;
+    font-size:18px;
+    line-height: 24px;
+    text-align:left;
+  }
   @media only screen and (min-width: 1200px) {
     .content__blog__container {
       width: 84%;

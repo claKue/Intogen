@@ -71,16 +71,44 @@
     margin-top: 0px;
   }
  
-   .unterTitel {
+   /* .unterTitel {
      font-size: 50px;
      text-align: left;
+     margin-left:10%;
+     margin-bottom:20px;
+     margin-top:5%;
    }
 
    .aboutusText {
      font-Size: 20px;
      text-align: left;
      max-width: 50%;
-   }
+     margin-left:10%;
+     margin-bottom:20px;
+   } */
+   .unterTitel{
+    color: #111;
+    font-size: 80px;
+    text-align: left;
+    margin-left:5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+    margin-top:50px;
+}
+
+.aboutusText {
+    margin-top: 10px;
+    width: 100%;
+    color: #111;
+    font-size: 20px;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+    text-align: left;
+    max-width: 50%;
+    margin-left:5%;
+    margin-top: 20px;
+}
   
 .card {
   margin-bottom: 10px;

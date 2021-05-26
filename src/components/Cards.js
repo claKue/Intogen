@@ -7,11 +7,11 @@ import './Cards.css'
 function Cards() {
     return (
         <div className="cards">
-            <h1>Following are the description of Kolb's learning styles:</h1>
+            <h1>Learn more about Kolb's learning styles:</h1>
             <div className="cards__container">
                 <div className="cards__wrapper">
                     <ul className="cards__items">
-                                    <CardItem
+                                    <CardItem    
                             text="They want practical tasks and very little theory. They learn best from activities where:
                             New experiences are emphasised.
                             The focus is on the present and on doing such activities as games, problem solving,
@@ -27,7 +27,8 @@ function Cards() {
                             When they lean they will ask 'what if?' and 'why not?' to support their action-first approach. 
                             They do not like routine and will take creative risks to see what happens. 
                             They learn better by themselves than with others."
-                            label="ACTIVISTS (Concrete experiencer/Active experimenter)"
+                            h5="ACTIVISTS"
+                            label="Concrete experiencer/Active experimenter"
                         />
 
                          <CardItem 
@@ -46,7 +47,8 @@ function Cards() {
                             Lectures are their preference, with demonstrations where possible, and will respect the knowledge of experts. 
                             People with this style will have a strong control need. 
                             They learn best with lectures that start from high-level concepts and work down to the detail."
-                            label="THEORISTS (Abstract conceptualiser/Reflective observer)"
+                            h5="THEORISTS"
+                            label="Abstract conceptualiser/Reflective observer"
                         />
                     </ul>
                     <ul className="cards__items">
@@ -66,7 +68,8 @@ function Cards() {
                             When they learn they will ask 'why?', and will start from detail to logically work up to the big picture. 
                             They like working with others but like things to remain calm – they will be distressed by conflicts in the group. 
                             They like to receive constructive feedback."
-                            label="REFLECTORS (Concrete experiencer/Reflective observer)"
+                            h5="REFLECTORS"
+                            label="Concrete experiencer/Reflective observer"
                         />
                         <CardItem 
                             text="They want shortcuts and tips. They learn best from activities where
@@ -82,7 +85,8 @@ function Cards() {
                             When they learn they will ask 'how?', and will want to learn by understanding how things work in practice. 
                             They like facts and will seek to make things efficient by making small and careful changes. 
                             They prefer to work alone or independently."
-                            label="PRAGMATISTS (Abstract conceptualization/Active experimenter)"
+                            h5="PRAGMATISTS"
+                            label="Abstract conceptualization/Active experimenter"
                         />
                     </ul>
                 </div>
