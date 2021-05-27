@@ -3,14 +3,25 @@ import * as Survey from "survey-react";
 import "survey-react/modern.css";
 import Footer from '../Footer'
 
+
 Survey.StylesManager.applyTheme("modern");
 
 class FindYourType extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props)
+        this.state = {
+
         }
+        this.onCompleteComponent = this.onCompleteComponent.bind(this)
+        }
+  onCompleteComponent = () => {
+    this.setState({
+      isCompleted: true
+    })
+  }
 
 render() {
+  
   var json = {
           
     questions: [
@@ -18,6 +29,7 @@ render() {
         type: "matrix",
         name: "Quality", 
         title: "Please indicate if you agree or disagree with the following statements",
+        isRequired: "true",
         columns: [ 
           { value: 1, 
             text: "Agree" }, 
@@ -48,16 +60,37 @@ render() {
       }
     ]     
 };
-var survey = new Survey.Model(json);
- return (
-          <>
-            <hr class="border2" data-content="Find your Type"/>
-            <Survey.Survey
-            model={survey}
-            />
-          </>
-        );
+
+
+var surveyRender = !this.state.isCompleted ? (
+  <Survey.Survey 
+  json={ json }
+  showCompletedPage={false}
+  onComplete={this.onCompleteComponent}
+  />
+) : null
+
+var onSurveyCompletion = this.state.isCompleted ? (
+  <div style={{ fontSize: 50 }}>
+    <h1>
+      Platzhalter
+    </h1>
+  </div>
+) : null;
+
+return (
+  <div className="App">
+    <div>
+      { surveyRender }
+      { onSurveyCompletion }
+      <Footer/>
+    </div>
+  </div>
+      );
+
+
     }
 }
+
 
 export default FindYourType;
