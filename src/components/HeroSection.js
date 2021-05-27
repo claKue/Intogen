@@ -2,6 +2,7 @@ import React from 'react';
 import '../App.css';
 import './HeroSection.css';
 import img1 from '../components/assets/learning_styles.jpg'
+
 function HeroSection() {
 
     return (

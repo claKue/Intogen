@@ -1,9 +1,7 @@
 import React from 'react';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import Typography from '@material-ui/core/Typography';
 import '../../App.css'
-// import Footer from '../Footer'
+import LearningCards from '../LearningCards'
+
 
 export default function Education() {
     return (
@@ -58,52 +56,10 @@ export default function Education() {
                             <h3>Kolb's Learning Styles</h3>
                             <hr class="border1"/>
                             <div className="cards">
-                                <Card className="card" style={{backgroundColor:'rgb(250,250,250)'}}>
-                                    <CardContent>
-                                            <Typography>
-                                                ACTIVITS
-                                            </Typography>
-                                            <Typography>
-                                                <small>(Concrete experiencer/Active experimenter)</small>
-                                            </Typography>
-                                        </CardContent>
-                                    </Card>
-
-                                    <Card className="card" style={{backgroundColor:'rgb(250,250,250)'}}>
-                                        <CardContent>
-                                            <Typography>
-                                                THEORISTS
-                                            </Typography>
-                                            <Typography>
-                                                <small>(Abstract conceptualiser/Reflective observer)</small>
-                                            </Typography>
-                                        </CardContent>
-                                    </Card>
-
-                                    <Card className="card" style={{backgroundColor:'rgb(250,250,250)'}}>
-                                        <CardContent>
-                                            <Typography>
-                                                REFLECTORS
-                                            </Typography>
-                                            <Typography>
-                                                <small>(Concrete experiencer/Reflective observer)</small>
-                                            </Typography>
-                                        </CardContent>
-                                    </Card>
-
-                                    <Card className="card" style={{backgroundColor:'rgb(250,250,250)'}}>
-                                        <CardContent>
-                                            <Typography>
-                                                PRAGMATISTS
-                                            </Typography>
-                                            <Typography>
-                                                <small>(Abstract conceptualization/Active experimenter)</small>
-                                            </Typography>
-                                        </CardContent>
-                                    </Card>
-                                </div>
+                                <LearningCards/>
                             </div>
                         </div>
+                    </div>
 
                     
                 </div>

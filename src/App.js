@@ -10,8 +10,6 @@ import FindYourType from './components/Pages/FindYourType'
 import AboutUs from './components/Pages/AboutUs'
 
 
-
-
 function App() {
   return (
       <>

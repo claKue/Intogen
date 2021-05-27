@@ -8,6 +8,8 @@
   
 .border1{
   width: 330px;
+  border: 1px solid rgba(0,0,0,.125);
+  margin-top: 10px;
 }
 
 .border2 {
@@ -109,17 +111,6 @@
     margin-left:5%;
     margin-top: 20px;
 }
-  
-.card {
-  margin-bottom: 10px;
-  width: 330px;
-  height: 70px;
-  margin-left: -62px;
-} 
-
-.card:hover{
-  color: rgb(255, 102, 0);
-}
 
 .rightSide {
   height: 100%;
@@ -146,6 +137,10 @@
 
 #countryCmbBox {
   width: 80px;
+}
+
+.test {
+  color: #111;
 }
 
 
