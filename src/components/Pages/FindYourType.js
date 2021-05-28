@@ -81,14 +81,13 @@ var onSurveyCompletion = this.state.isCompleted ? (
 return (
   <div className="App">
     <div>
+    <hr class="border2" data-content="Find your Type"/>
       { surveyRender }
       { onSurveyCompletion }
       <Footer/>
     </div>
   </div>
       );
-
-
     }
 }
 
