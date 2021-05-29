@@ -22,19 +22,19 @@
     margin-top: 10px;
     width: 95%;
     color: #111;
-    font-size: 20px;
+    font-size: 18px;
     justify-content: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
     text-align: left;
-    max-width: 45%;
+    max-width: 50%;
     margin-left:5%;
 }
 .bildHome {
     max-width: 40%;
     object-fit: contain;
     margin-left: 60%;
-    margin-top: -250px;
+    margin-top: -20%;
 }
 
 .hero-btns {

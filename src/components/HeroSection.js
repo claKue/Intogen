@@ -8,8 +8,13 @@ function HeroSection() {
     return (
         <div className="hero-container">
             <h1>Welcome to Intogen</h1>
-            <p>Intogen is David Kolbs's research based web service which provides Uni-Due ISE students to identify thire preferred learning styles. 
-            Learning style's data will be used as in to provide overview on the basis of there nationalities and education, also it will allow participants to do the survey online and see there results along with suggestions about courses which they might like to study with liked type learners.
+            <p>Intogen is David Kolb's research based web service, which helps ISE students of the University Duisburg-Essen
+to identify their preferred Learning Styles. The Learning style's data will be used to provide an overview on the basis of their nationalities and education.
+After completing the survey, students are able to see suggested courses they might like to study based off of their Learning Style. <br/><br/>
+Dataset overview: <br/>
+1- Nationality <br/>
+2- Education<br/>
+3- Course suggestion with Learning Styles
            </p>
            <img className="bildHome" src={img1} alt="learning styles" />
         </div>

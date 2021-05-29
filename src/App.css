@@ -72,31 +72,6 @@
     font-size: 100px;
     margin-top: 0px;
   }
-  .aboutusColorText {
-    color: rgb(12, 5, 32);
-    font-size: 80px;
-    text-align: left;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
-    margin-top:50px;
-}
-
- 
-   /* .unterTitel {
-     font-size: 50px;
-     text-align: left;
-     margin-left:10%;
-     margin-bottom:20px;
-     margin-top:5%;
-   }
-
-   .aboutusText {
-     font-Size: 20px;
-     text-align: left;
-     max-width: 50%;
-     margin-left:10%;
-     margin-bottom:20px;
-   } */
    .underTitle{
     color: #111;
     font-size: 80px;
@@ -106,19 +81,28 @@
     'Lucida Sans', Arial, sans-serif;
     margin-top:50px;
 }
-
+.aboutusColorText {
+  color: #111;
+  font-size: 80px;
+  text-align: left;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+  'Lucida Sans', Arial, sans-serif;
+  margin-top:50px;
+}
 .aboutusText {
-    margin-top: 10px;
-    width: 100%;
     color: #111;
-    font-size: 20px;
-    justify-content: center;
+    font-size: 18px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
     text-align: left;
-    max-width: 60%;
+    max-width: 50%;
     margin-left:5%;
-    margin-top: 20px;
+    margin-top:-110px;
+}
+.bildAboutus {
+  max-width: 400px;
+  object-fit: contain;
+  margin-left: 800px;
 }
 
 .rightSide {
