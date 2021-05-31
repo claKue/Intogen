@@ -112,6 +112,9 @@ return (
     <hr class="border2" data-content="Find your Type"/>
       { surveyRender }
       { onSurveyCompletion }
+      <h1 style={{fontSize: 20, textAlign: "left" }}>
+        *Requiered fields
+      </h1>
       <Footer/>
     </div>
   </div>
