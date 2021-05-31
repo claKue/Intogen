@@ -10,8 +10,9 @@ import { ExpressionRunner } from 'survey-react';
     return (
         <>
         <hr class="border2" data-content="About Us"/>
-        <h1 className="subTitle">Learn more<span className ="aboutusColorText"> about us </span>
-        </h1>
+        <div>
+        <span className="subTitle">Welcome to <b>Intogen </b></span><br/>
+        </div>
         <img className="imageAboutus" src={img2} alt="unilogo" />
             <p className="aboutusText">
             Intogen was originally programmed by students from University Duisburg-Essen's ISE program Computer Engineering department (CE) major (Intelligent Networked Systems).

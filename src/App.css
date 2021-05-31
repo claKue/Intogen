@@ -58,22 +58,15 @@
 
  .subTitle{
   color: #111;
-  font-size: 80px;
+  font-size: 250%;
   text-align: left;
   margin-left:5%;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
   'Lucida Sans', Arial, sans-serif;
   margin-top:50px;
+  
 }
 
-.aboutusColorText {
-  color: #111;
-  font-size: 80px;
-  text-align: left;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-  'Lucida Sans', Arial, sans-serif;
-  margin-top:50px;
-}
 .aboutusText {
     color: #111;
     font-size: 18px;
@@ -82,7 +75,7 @@
     text-align: left;
     max-width: 50%;
     margin-left:5%;
-    margin-top:-110px;
+    margin-top:-120px;
 }
 .imageAboutus {
   max-width: 400px;
