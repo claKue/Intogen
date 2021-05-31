@@ -27,21 +27,20 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <NavDropdown title="VISUALIZATION" className="nav-links" id="dropdown"> 
-                                {/* <i class="icon-angle-down"></i> */}
-                                <Link to="/nationality" className="nav-links" onClick={closeMobileMenu}>
+                            <NavDropdown title="VISUALIZATION" bsPrefix="nav-links" >
+                                <Link to="/nationality" className="nav-dropdown"  onClick={closeMobileMenu}>
                                     NATIONALITY
                                 </Link>
-                                <Link to="/education" className="nav-links" onClick={closeMobileMenu}>
+                                <Link to="/education" className="nav-dropdown"  onClick={closeMobileMenu}>
                                     EDUCATION DEGREE
                                 </Link>
                             </NavDropdown>
                         </li>
-                        
+                        {/* <i class="icon-angle-down"></i> */}
 
                         <li className="nav-item">
                             <Link to="/findyourtype" className="nav-links" onClick={closeMobileMenu}>
-                                FIND YOUR TYPE
+                                FIND YOUR TYPE 
                             </Link>
                         </li>
                         <li className="nav-item">

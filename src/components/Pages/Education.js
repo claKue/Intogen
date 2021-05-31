@@ -26,7 +26,7 @@ export default function Education() {
                             <hr class="border"/>
                         </div>
 
-                        <p> DAS IST EIN PLACEHOLDER FÜR DIE DIAGRAMME 
+                        <p> <b>PLACEHOLDER FOR THE DIAGRAMS </b> <br/>
                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
                             Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque 
                             penatibus et magnis dis parturient montes, nascetur ridiculus mus. 

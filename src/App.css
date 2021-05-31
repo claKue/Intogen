@@ -72,7 +72,12 @@
     font-size: 100px;
     margin-top: 0px;
   }
-   .underTitle{
+
+  .aboutUsFindType {
+    color: rgb(255, 102, 0);
+  }
+
+   .subTitle{
     color: #111;
     font-size: 80px;
     text-align: left;
@@ -116,7 +121,13 @@
   margin-bottom: 0px;
 }
 
-.leftSide {
+
+.cards {
+  margin-left: -63px;
+}
+
+
+.leftSide { 
   height: 100%;
   width: 700px;
   left: 10px;

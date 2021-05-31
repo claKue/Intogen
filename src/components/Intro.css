@@ -1,4 +1,8 @@
-.hero-container {
+.titleHome {
+    font-size: 250%;
+}
+
+.intro-container {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -9,7 +13,7 @@
     object-fit: contain;
 }
 
-.hero-container > h1 {
+.intro-container > h1 {
     color: #111;
     font-size: 80px;
     text-align: left;
@@ -18,7 +22,7 @@
     'Lucida Sans', Arial, sans-serif;
 }
 
-.hero-container > p {
+.intro-container > p {
     margin-top: 10px;
     width: 95%;
     color: #111;
@@ -35,18 +39,6 @@
     object-fit: contain;
     margin-left: 60%;
     margin-top: -20%;
-}
-
-.hero-btns {
-    margin-top: 32px;
-}
-
-.hero-btns .btn {
-    margin: 6px;
-}
-
-.fa-play-circle {
-    margin-left: 4px;
 }
 
 @media screen and (max-width: 960px) {

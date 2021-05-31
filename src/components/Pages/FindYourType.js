@@ -73,7 +73,7 @@ var surveyRender = !this.state.isCompleted ? (
 var onSurveyCompletion = this.state.isCompleted ? (
   <div style={{ fontSize: 50 }}>
     <h1>
-      Platzhalter
+      PLACEHOLDER
     </h1>
   </div>
 ) : null;

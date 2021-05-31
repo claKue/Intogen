@@ -12,7 +12,7 @@ import Typography from '@material-ui/core/Typography'
 const Accordion = withStyles({
     root: {
         border: '1px solid rgba(0,0,0,.125)',
-        width: '300px',
+        width: '330px',
         boxShadow: 'none',
         '&:not(:last-child)': {
             borderBottom: 0,
@@ -63,7 +63,7 @@ function LearningCards() {
         <>
             <Accordion square expanded={expanded === 'panel1'} onChange={handleChange("panel1")}>
                 <AccordionSummary aria-controls='panel1d-content' id='panel1d-header'>
-                    <Typography className="learningCard">ACTIVISTS <br/><small>(Concrete experiencer/Active experimenter)</small></Typography>
+                    <Typography className="learningCard">ACTIVISTS <br/><small className="cardsSubTitle">(Concrete experiencer/Active experimenter)</small></Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
@@ -90,7 +90,7 @@ function LearningCards() {
 
             <Accordion square expanded={expanded === 'panel2'} onChange={handleChange("panel2")}>
                 <AccordionSummary aria-controls='panel2d-content' id='panel2d-header'>
-                    <Typography className="learningCard">THEORISTS <br/><small>(Abstract conceptualiser/Reflective observer)</small></Typography>
+                    <Typography className="learningCard">THEORISTS <br/><small className="cardsSubTitle">(Abstract conceptualiser/Reflective observer)</small></Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
@@ -113,7 +113,7 @@ function LearningCards() {
 
             <Accordion square expanded={expanded === 'panel3'} onChange={handleChange("panel3")}>
                 <AccordionSummary aria-controls='panel3d-content' id='panel3d-header'>
-                    <Typography className="learningCard">REFLECTORS <br/><small>(Concrete experiencer/Reflective observer)</small></Typography>
+                    <Typography className="learningCard">REFLECTORS <br/><small className="cardsSubTitle">(Concrete experiencer/Reflective observer)</small></Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
@@ -137,7 +137,7 @@ function LearningCards() {
 
             <Accordion square expanded={expanded === 'panel4'} onChange={handleChange("panel4")}>
                 <AccordionSummary aria-controls='panel4d-content' id='panel4d-header'>
-                    <Typography className="learningCard">PRAGMATISTS <br/><small>(Abstract conceptualization/ Active experimenter) </small></Typography>
+                    <Typography className="learningCard">PRAGMATISTS <br/><small className="cardsSubTitle">(Abstract conceptualization/ Active experimenter) </small></Typography>
                 </AccordionSummary>
                  <AccordionDetails>
                     <Typography>

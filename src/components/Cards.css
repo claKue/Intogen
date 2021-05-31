@@ -52,12 +52,6 @@
     padding-top: 15%;
     overflow: hidden;
   }
-
-  
-  /* .fade-img {
-    animation-name: fade-img;
-    animation-duration: 2s;
-  } */
   
   .cards__item__pic-wrap::after {
     content: attr(data-category);
@@ -73,25 +67,6 @@
 
   }
   
-  /* .cards__item__img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: block;
-    width: 80%;
-    max-width: 80%;
-    height: 80%;
-    max-height: 80%;
-    object-fit: fill;
-    transition: all 0.2s linear;
-  }
-  
-  .cards__item__img:hover {
-    transform: scale(1.1);
-  }
-   */
   .cards__item__info {
     padding: 20px 30px 30px;
   }

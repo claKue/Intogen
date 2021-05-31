@@ -1,6 +1,5 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-// import img1 from '../components/assets/learning_styles.jpg';
 
 function CardItem(props) { 
     return (
