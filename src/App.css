@@ -1,3 +1,7 @@
+/* color: rgb(255, 102, 0); */
+
+/* general stylings  */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,12 +9,15 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
   }
-  
-.border1{
-  width: 330px;
-  border: 1px solid rgba(0,0,0,.125);
-  margin-top: 10px;
-}
+
+  .home,
+  .visualization,
+  .findyourtype,
+  .aboutus {
+    justify-content: center;
+    font-size: 3rem;
+    margin-top: 0px;
+  }
 
 .border2 {
   outline: 0;
@@ -34,58 +41,31 @@
     margin-left: 55px;
   }
 
-/* color: rgb(255, 102, 0); */
+/* aboutUs page */
 
-  .home,
-  .visualization,
-  .findyourtype,
-  .aboutus {
-
-    justify-content: center;
-    font-size: 3rem;
-    margin-top: 0px;
-  }
-  
-  .visualization {
-    /* background-image: url('/images/img-2.jpg'); */
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #111;
-    font-size: 100px;
-  }
-  
-  .findyourtype {
-    /* background-image: url('/images/img-1.jpg'); */
-    background-position: center;
-    background-size: fill;
-    background-repeat: no-repeat;
-    color: #111;
-    font-size: 100px;
-  }
-
-  .aboutus {
-    background-position: center;
-    background-size: fill;
-    background-repeat: no-repeat;
-    color: #111;
-    font-size: 100px;
-    margin-top: 0px;
-  }
-
-  .aboutUsFindType {
-    color: rgb(255, 102, 0);
-  }
-
-   .subTitle{
-    color: #111;
-    font-size: 80px;
-    text-align: left;
-    margin-left:5%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
-    margin-top:50px;
+.aboutus {
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #111;
+  font-size: 100px;
+  margin-top: 0px;
 }
+
+.aboutUsFindType {
+  color: rgb(255, 102, 0);
+}
+
+ .subTitle{
+  color: #111;
+  font-size: 80px;
+  text-align: left;
+  margin-left:5%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+  'Lucida Sans', Arial, sans-serif;
+  margin-top:50px;
+}
+
 .aboutusColorText {
   color: #111;
   font-size: 80px;
@@ -104,10 +84,26 @@
     margin-left:5%;
     margin-top:-110px;
 }
-.bildAboutus {
+.imageAboutus {
   max-width: 400px;
   object-fit: contain;
   margin-left: 800px;
+}
+
+/* visualization page */
+
+.border1{
+  width: 330px;
+  border: 1px solid rgba(0,0,0,.125);
+  margin-top: 10px;
+}
+
+.visualization {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #111;
+  font-size: 100px;
 }
 
 .rightSide {
@@ -121,11 +117,9 @@
   margin-bottom: 0px;
 }
 
-
 .cards {
   margin-left: -63px;
 }
-
 
 .leftSide { 
   height: 100%;
@@ -143,8 +137,12 @@
   width: 80px;
 }
 
-.test {
+/* findYourType page */
+
+.findyourtype {
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
   color: #111;
+  font-size: 100px;
 }
-
-

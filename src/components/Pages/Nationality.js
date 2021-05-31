@@ -1,5 +1,6 @@
 import * as React from 'react';
 import '../../App.css'
+import Footer from '../Footer'
 
 import LearningCards from '../LearningCards'
 
@@ -48,8 +49,11 @@ export default function Nationality() {
                                 <LearningCards/>
                             </div>
                     </div>
-                </div>               
+                     
+                </div>  
+                        
             </div>
+            {/* <Footer/>  */}
         </>
     );
 }
