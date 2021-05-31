@@ -57,8 +57,36 @@ render() {
           { value: "10", 
             text: "I am attracted more to novel, unusual ideas than to practical ones." }
               ]
+      },
+
+      {
+        type: "radiogroup",
+        name: "ba/ma",
+        title: "What are you currently studying?",
+        isRequired: true,
+        colCount: 2,
+        choices: [
+            "Bachelors",
+            "Masters"
+        ]
+      },
+      {
+        type: "dropdown",
+        name: "studyprogramm",
+        title: "Choose your study programm",
+        isRequired: true,
+        colCount: 0,
+        choices: [
+          "B.Sc. Computer Engineering (Software Engineering",
+          "B.Sc. Computer Engineering (Communications",
+          "B.Sc. Electrical and Electronic Engineering",
+          "B.Sc. Mechanical Engineering",
+          "B.Sc. Metallurgy and Metal Forming",
+          "B.Sc. Steel Technology and Metall Forming",
+          "B.Sc. Structural Engineering"
+        ]
       }
-    ]     
+    ]
 };
 
 
