@@ -52,6 +52,10 @@
   margin-top: 0px;
 }
 
+.aboutUs-container {
+  margin-top: 75px;
+}
+
 .aboutUsFindType {
   color: rgb(255, 102, 0);
 }
@@ -63,8 +67,7 @@
   margin-left:5%;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
   'Lucida Sans', Arial, sans-serif;
-  margin-top:50px;
-  
+  margin-top:50px; 
 }
 
 .aboutusText {
@@ -88,7 +91,7 @@
 .border1{
   width: 330px;
   border: 1px solid rgba(0,0,0,.125);
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .visualization {
@@ -110,8 +113,10 @@
   margin-bottom: 0px;
 }
 
-.cards {
+.cards1 {
   margin-left: -63px;
+  padding: 4rem;
+  background: #fff;
 }
 
 .leftSide { 

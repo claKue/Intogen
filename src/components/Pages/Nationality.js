@@ -45,7 +45,7 @@ export default function Nationality() {
                     <div className="rightSide">
                             <h3>Kolb's Learning Styles</h3>
                             <hr class="border1"/>
-                            <div className="cards">
+                            <div className="cards1">
                                 <LearningCards/>
                             </div>
                     </div>
