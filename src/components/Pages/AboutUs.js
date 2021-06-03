@@ -12,6 +12,7 @@ import { ExpressionRunner } from 'survey-react';
         <hr class="border2" data-content="About Us"/>
         <div className="aboutUs-container">
         <span className="subTitle">Welcome to <b>Intogen </b></span><br/>
+        <p className="subTitle2">Learn more about us.</p>
         </div>
         <img className="imageAboutus" src={img2} alt="unilogo" />
             <p className="aboutusText">
